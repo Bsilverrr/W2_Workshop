@@ -175,6 +175,43 @@ SELECT * FROM Customer;
 SELECT * FROM payment;
 SELECT * FROM dog;
 
+INSERT INTO Appointment_Dog (
+    Appointment_ID,
+    Dog_ID
+)
+VALUES
+(90123, 818),
+(90124, 819),
+(90125, 820),
+(90126, 821),
+(90127, 822),
+(90128, 823),
+(90129, 824),
+(90130, 825),
+(90131, 826),
+(90132, 827),
+(90133, 828);
 
+SELECT * FROM appointment_dog;
 
+INSERT INTO Payment (
+    Payment_ID,
+    Appointment_ID,
+    Payment_Status,
+    Payment_Method,
+    Payment_Date
+)
+VALUES
+(99, 90123, 'Paid', 'Debit', '2026-07-02'),
+(100, 90124, 'Paid', 'Credit', '2026-07-13'),
+(101, 90125, 'Paid', 'Debit', '2026-07-14'),
+(102, 90126, 'Pending', NULL, NULL),
+(103, 90127, 'Paid', 'Cash', '2026-07-16'),
+(104, 90128, 'Paid', 'Credit', '2026-07-17'),
+(105, 90129, 'Paid', 'Debit', '2026-07-18'),
+(106, 90130, 'Pending', NULL, NULL),
+(107, 90131, 'Paid', 'Credit', '2026-07-20'),
+(108, 90132, 'Paid', 'Cash', '2026-07-21'),
+(109, 90133, 'Paid', 'Debit', '2026-07-22');
 
+SELECT * FROM payment;
